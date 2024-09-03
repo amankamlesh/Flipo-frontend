@@ -25,7 +25,7 @@ const navigate=useNavigate()
   const {data, isLoading, isError}=useProductDetailsQuery(params.id!); 
 
 
-const [product,setproduct]=useState({
+const [product]=useState({
   _id:"",
   photo:"",category:"",name:"",
   stock:0,

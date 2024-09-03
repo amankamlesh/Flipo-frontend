@@ -9,7 +9,7 @@ import { useOrderDetailsQuery,useUpdateOrderMutation,useDeleteOrderMutation } fr
 import { Skeleton } from '../../../components/loader';
 import { responseToast } from '../../../utils/features';
 
-const orderItems: any[] = [];
+// const orderItems: any[] = [];
 
 const defaultData: Order = {
   shippingInfo: {

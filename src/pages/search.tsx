@@ -39,7 +39,7 @@ const Search = () => {
   };
 
   const isPrevPage = page > 1;
-  const isNextPage = searchedData?.totalPage > page;
+  const isNextPage = searchedData!?.totalPage > page;
 
   if (isError) {
     const err = error as CustomError;
