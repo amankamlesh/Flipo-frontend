@@ -9,7 +9,7 @@ import {
 } from "../../../redux/api/productAPI";
 
 import { Navigate, useNavigate, useParams } from "react-router-dom";
-import { server } from '../../../redux/store';
+import { server, RootState } from '../../../redux/store';
 import { Skeleton } from '../../../components/loader';
 import { responseToast } from '../../../utils/features';
 
