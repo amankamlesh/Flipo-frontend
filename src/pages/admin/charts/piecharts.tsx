@@ -1,17 +1,15 @@
+import { useSelector } from "react-redux";
+import { Navigate } from "react-router-dom";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import { DoughnutChart, PieChart } from "../../../components/admin/Charts";
-import { useSelector } from 'react-redux';
-import { RootState } from '../../../redux/store';
-import {usePieQuery} from '../../../redux/api/dashboardAPI';
+import { Skeleton } from "../../../components/loader";
+import { usePieQuery } from "../../../redux/api/dashboardAPI";
+import { RootState } from "../../../redux/store";
 
-import toast from 'react-hot-toast';
-import { Skeleton } from '../../../components/loader';
-import { CustomError } from '../../../types/apitypes';
-import { processOrder } from '../../../../../ecommerce-backend/src/controllers/order';
 const PieCharts = () => {
 
  
-    const {user}=useSelector((state:RootState)=>state.userReducer);
+    const {user} = useSelector((state:RootState)=>state.userReducer);
     const {isLoading,data,error,isError}=usePieQuery(user?._id!);
   
    const order=data?.charts.orderFullfillment!;

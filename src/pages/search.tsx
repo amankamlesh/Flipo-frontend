@@ -76,10 +76,10 @@ if (productIsError){
           <h4>Catagory</h4>
           <select value={category} onChange={(e)=>setCategory(e.target.value)}>
         <option value="">All</option>
-      {
-        !loadingCategories && categoriesResponse?.
-        categories.map((i)=>(
-          <option key={i} value={i}>{i.toUpperCase()}
+        {!loadingCategories &&
+              categoriesResponse?.categories.map((i) => (
+                <option key={i} value={i}>
+                  {i.toUpperCase()}
           </option>
 
         ))

@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import toast from 'react-hot-toast';
 import { saveShippingInfo } from "../redux/reducer/cartReducer";
 import axios from "axios";
-import { RootState,server } from '../redux/store';
+import { server } from '../redux/store';
 
 const Shipping = () => {
   const { cartItems,total } = useSelector(
