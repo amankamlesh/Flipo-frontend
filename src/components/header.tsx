@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { User } from '../types/types';
 import {signOut} from "firebase/auth"
 import toast from 'react-hot-toast';
+import { auth } from '../firebase';
 
 interface PropsType{
   user:User|null;

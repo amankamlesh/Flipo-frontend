@@ -66,7 +66,7 @@ const Customers = () => {
 
   const deleteHandler=async(userId:string)=>{
     if (!user || !user._id) {
-      responseToast( "User is not authenticated", "");
+      responseToast( "User is not authenticated",null, "");
       return;
   }
     const res=await deleteUser({userId,adminUserId:user?._id!});
@@ -83,7 +83,7 @@ const Customers = () => {
 
   useEffect(() => {
     if(data) 
-      setRows( data.user.map(({i})=>({
+      setRows( data.users.map(({i})=>({
        avatar:<img 
        style={{
         borderRadius:"50%",

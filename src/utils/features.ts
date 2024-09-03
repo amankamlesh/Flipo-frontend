@@ -1,4 +1,4 @@
-// import { MessageResponse } from '../types/apitypes';
+import { MessageResponse } from '../types/apitypes';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query/react';
 import {SerializedError} from '@reduxjs/toolkit'
 import toast from 'react-hot-toast';
