@@ -5,8 +5,8 @@ import { DoughnutChart, PieChart } from "../../../components/admin/Charts";
 import { Skeleton } from "../../../components/loader";
 import { usePieQuery } from "../../../redux/api/dashboardAPI";
 import { RootState } from "../../../redux/store";
-import { CustomError } from '../../../types/apitypes';
-import  toast from 'react-hot-toast';
+// import { CustomError } from '../../../types/apitypes';
+// import  toast from 'react-hot-toast';
 
 const PieCharts = () => {
 
