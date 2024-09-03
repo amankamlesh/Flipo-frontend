@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Column } from "react-table";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import TableHOC from "../../components/admin/TableHOC";
-import { UserReducerInitialState } from '../../types/reducer-type';
+// import { UserReducerInitialState } from '../../types/reducer-type';
 import { useSelector } from 'react-redux';
 import { useAllOrdersQuery } from "../../redux/api/orderAPI";
 import toast from 'react-hot-toast';

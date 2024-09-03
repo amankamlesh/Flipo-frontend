@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { Elements, PaymentElement, useStripe,  useElements } from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import { useState, FormEvent } from 'react';
@@ -9,7 +9,7 @@ import toast from 'react-hot-toast';
 import {NewOrderRequest} from "../types/apitypes"
 import { responseToast } from '../utils/features';
 import { useSelector, useDispatch } from 'react-redux';
-import { cartReducer } from '../redux/reducer/cartReducer';
+// import { cartReducer } from '../redux/reducer/cartReducer';
 import { resetCart } from "../redux/reducer/cartReducer";
 const stripePromise=loadStripe(import.meta.env.VITE_STRIPE_KEY);
 

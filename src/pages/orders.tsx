@@ -5,7 +5,7 @@ import { Column } from 'react-table'
 import { useState,useEffect } from 'react'
 import {useMyOrdersQuery} from '../redux/api/orderAPI'
 import { useSelector } from 'react-redux';
-import { UserReducerInitialState } from '../types/reducer-type';
+// import { UserReducerInitialState } from '../types/reducer-type';
 import toast from 'react-hot-toast';
 import { CustomError } from '../types/apitypes';
 import { Skeleton } from '../components/loader';

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { TbError404Off } from "react-icons/tb";
 const NotFound = () => {
   return (

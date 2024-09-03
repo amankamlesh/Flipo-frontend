@@ -5,6 +5,8 @@ import { DoughnutChart, PieChart } from "../../../components/admin/Charts";
 import { Skeleton } from "../../../components/loader";
 import { usePieQuery } from "../../../redux/api/dashboardAPI";
 import { RootState } from "../../../redux/store";
+import { CustomError } from '../../../types/apitypes';
+import  toast from 'react-hot-toast';
 
 const PieCharts = () => {
 
@@ -19,10 +21,8 @@ const PieCharts = () => {
    const ageGroup=data?.charts.userAgeGroup!;
    const adminCustomer=data?.charts.adminCustomer!;
 
-    if(isError) {
-      const err=error as CustomError
-      toast.error(err.data.message);
-    }
+   if (isError) return <Navigate to={"/admin/dashboard"} />;
+
 
 
   return (
