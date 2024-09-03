@@ -118,8 +118,8 @@ export type Pie={
     },
     userAgeGroup:{
         teen:number;
-        ,adult:number;
-        ,old:number;
+        adult:number;
+        old:number;
 
     },
 
