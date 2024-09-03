@@ -10,7 +10,7 @@ import TableHOC from "../../components/admin/TableHOC";
 import { CustomError } from '../../types/apitypes';
 import { Skeleton } from '../../components/loader';
 import { responseToast } from "../../utils/features";
-import { deleteUser } from '../../../../ecommerce-backend/src/controllers/user';
+// import { deleteUser } from '../../../../ecommerce-backend/src/controllers/user';
 import { RootState } from '../../redux/store';
 
 
@@ -83,7 +83,7 @@ const Customers = () => {
 
   useEffect(() => {
     if(data) 
-      setRows( data.user.map((i)=>({
+      setRows( data.user.map(({i})=>({
        avatar:<img 
        style={{
         borderRadius:"50%",

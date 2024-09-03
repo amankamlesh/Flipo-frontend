@@ -8,7 +8,7 @@ import { RootState } from "../../../redux/store";
 import { responseToast } from "../../../utils/features";
 const NewProduct = () => {
 
-  const {user}=useSelector((state:Rootstate)=>state.userReducer);
+  const {user}=useSelector((state:RootState)=>state.userReducer);
 
 
   const [name, setName] = useState<string>("");
