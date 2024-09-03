@@ -65,7 +65,7 @@ const Transaction = () => {
   useEffect(() => {
     if(data) 
       console.log(data.orders)
-      setRows(data.orders.map((i)=>({
+      setRows(data!.orders.map((i)=>({
       user:i.user.name || "null",
       amount:i.total,
       discount:i.discount,

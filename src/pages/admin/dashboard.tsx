@@ -10,11 +10,11 @@ import Table from "../../components/admin/DashboardTable";
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 
-import { userReducer } from '../../redux/reducer/userReducer';
+// import { userReducer } from '../../redux/reducer/userReducer';
 import { CustomError } from '../../types/apitypes';
 import toast from 'react-hot-toast';
 import { Skeleton } from '../../components/loader';
-import { Stats } from '../../types/types';
+// import { Stats } from '../../types/types';
 const userImg =
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJxA5cTf-5dh5Eusm0puHbvAhOrCRPtckzjA&usqp";
 

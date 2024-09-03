@@ -4,7 +4,8 @@ import CartItemCard from "../components/cart-item";
 import { Link } from "react-router-dom"; 
 import { useSelector, useDispatch } from 'react-redux';
 import { CartReducerInitialState } from '../types/reducer-type';
-import { RootState, server } from '../redux/store';
+import { server } from '../redux/store';
+
 import axios from "axios";
 import { CartItem } from '../types/types';
 import { addToCart, removeCartItem, calcuatePrice,discountApplied } from '../redux/reducer/cartReducer';

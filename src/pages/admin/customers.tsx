@@ -66,7 +66,7 @@ const Customers = () => {
 
   const deleteHandler=async(userId:string)=>{
     if (!user || !user._id) {
-      responseToast( null,"User is not authenticated", "");
+      responseToast(res, null, "");
       return;
   }
     const res=await deleteUser({userId,adminUserId:user?._id!});

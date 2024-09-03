@@ -16,7 +16,7 @@ import { responseToast } from '../../../utils/features';
 
 const Productmanagement = () => {
 
-  const {user}=useSelector((state:Rootstate)=>state.userReducer);
+  const {user}=useSelector((state:RootState)=>state.userReducer);
 
 const params=useParams()
 const navigate=useNavigate()

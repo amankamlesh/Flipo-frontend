@@ -9,7 +9,7 @@ import { server } from '../../redux/store';
 import toast from 'react-hot-toast';
 import { CustomError } from '../../types/apitypes';
 import { useSelector } from 'react-redux';
-import { userReducer } from '../../redux/reducer/userReducer';
+// import { userReducer } from '../../redux/reducer/userReducer';
 import { UserReducerInitialState } from '../../types/reducer-type';
 import { Skeleton } from '../../components/loader';
 
