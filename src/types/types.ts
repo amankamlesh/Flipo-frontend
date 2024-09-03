@@ -93,3 +93,35 @@ latestTransaction:LatestTransaction[];
 
 
 }
+
+export type Pie={
+
+    orderFullfillment:{
+        processing:number;
+        shipped:number;
+        delivered:number;
+    },
+    productCategories:Record<string,number>[],
+    stockAvailablity:{
+        inStock:number;
+        outOfStock:number;
+    },
+    revenueDistribution:{
+        netMargin:number;
+    discount:number;
+    productionCost:number;
+    burnt:number;
+    marketingCost:number;
+    },adminCustomer:{
+        admin:number;
+        customer:number;
+    },
+    userAgeGroup:{
+        teen:number;
+        ,adult:number;
+        ,old:number;
+
+    },
+
+
+}

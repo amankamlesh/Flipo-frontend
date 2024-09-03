@@ -33,7 +33,6 @@ const Dashboard = () => {
   }
 
 
-
   return (
     <div className="admin-container">
       <AdminSidebar />
@@ -46,8 +45,8 @@ const Dashboard = () => {
           <BsSearch />
           <input type="text" placeholder="Search for data, users, docs" />
           <FaRegBell />
-          <img src={userImg} alt="User" />
-        </div>
+          <img src={user?.photo ? user.photo : userImg} alt="User" />
+          </div>
 
         <section className="widget-container">
           <WidgetItem

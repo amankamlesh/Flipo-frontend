@@ -27,7 +27,7 @@ const CheckOutForm=()=>{
   cartItems,
   subtotal,
   tax,discount,shippingCharges,total,
- } = useSelector((state:Rootstate)=>state.cartReducer)
+ } = useSelector((state:RootState)=>state.cartReducer)
 
   const [isProcessing,setIsProcessing]=useState<boolean>(false);
 

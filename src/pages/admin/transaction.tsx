@@ -51,9 +51,9 @@ const columns: Column<DataType>[] = [
 const Transaction = () => {
 
   const {user}=useSelector((state:RootState)=>state.userReducer)
-  console.log({user});
+  // console.log({user});
   const {isLoading,data,isError,error}=useAllOrdersQuery(user?._id!);
-  console.log(useAllOrdersQuery(user._id!))
+  // console.log(useAllOrdersQuery(user._id!))
   const [rows, setRows] = useState<DataType[]>([]);
 
 
@@ -64,9 +64,9 @@ const Transaction = () => {
  
   useEffect(() => {
     if(data) 
-      console.log(data.orders)
-      setRows(data!.orders.map((i)=>({
-      user:i.user.name || "null",
+      // console.log(data.orders)
+      setRows(data.orders.map((i)=>({
+      user:i.user? i.user.name : "null",
       amount:i.total,
       discount:i.discount,
       quantity:i.orderItems.length,

@@ -1,5 +1,5 @@
 //import { user } from 'react-redux';
-import { User, Product, ShippingInfo, CartItem, Order, Stats } from './types';
+import { User, Product, ShippingInfo, CartItem, Order, Stats, Pie } from './types';
 
 export type CustomError={
     status:number;
@@ -66,6 +66,11 @@ export type OrderDetailsResponse={
 export type StatsResponse={
     success:boolean;
     stats:Stats;
+}
+
+export type PieResponse={
+    success:boolean;
+    charts:Pie;
 }
 
 export type NewProductRequest={
