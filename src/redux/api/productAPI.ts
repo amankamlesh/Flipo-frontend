@@ -16,7 +16,7 @@ export const productAPI = createApi({
       providesTags: ["product"],
     }),
 
-    categories: builder.query<CategoriesResponse, string>({
+    categories: builder.query<categoriesResponse, string>({
       query: () => `categories`,
       providesTags: ["product"],
     }),

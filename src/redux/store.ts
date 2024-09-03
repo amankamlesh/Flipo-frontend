@@ -20,9 +20,13 @@ export const store= configureStore({
 
      
     },
-   middleware:(mid)=>[...mid(),userApi.middleware
-    ,productAPI.middleware,orderApi.middleware,
-    dashboardApi.middleware],
-});
+    middleware: (mid) => [
+        ...mid(),
+        userApi.middleware,
+        productAPI.middleware,
+        orderApi.middleware,
+        dashboardApi.middleware,
+      ],
+    });
 
 export type RootState = ReturnType<typeof store.getState>;

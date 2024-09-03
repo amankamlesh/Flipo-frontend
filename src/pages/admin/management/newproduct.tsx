@@ -53,7 +53,7 @@ formData.set("photo",photo);
 formData.set("category",category);
 
 const res=await newProduct({id:user?._id!,formData});
-console.log(user.id)
+// console.log(user.id)
 responseToast(res,navigate,"/admin/product")
 
   };
