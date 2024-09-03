@@ -64,8 +64,8 @@ const Customers = () => {
 
  const [deleteUser]=useDeleteUserMutation();
 
- const res=await deleteUser({userId,adminUserId:user?._id!});
-  const deleteHandler=async(userId:string)=>{
+ const deleteHandler=async(userId:string)=>{
+    const res=await deleteUser({userId,adminUserId:user?._id!});
     if (!user || !user._id) {
       responseToast(res, null, "");
       return;
@@ -83,7 +83,7 @@ const Customers = () => {
 
   useEffect(() => {
     if(data) 
-      setRows( data.user.map((i)=>({
+      setRows( data.users.map((i)=>({
        avatar:<img 
        style={{
         borderRadius:"50%",

@@ -4,9 +4,9 @@ import {loadStripe} from '@stripe/stripe-js';
 import { useState, FormEvent } from 'react';
 import { Navigate,useLocation,useNavigate } from 'react-router-dom';
 import {useNewOrderMutation} from "../redux/api/orderAPI"
-import {Rootstate} from "../redux/store"
+import {RootState} from "../redux/store"
 import toast from 'react-hot-toast';
-import NewOrderRequest from "../types/apitypes"
+import {NewOrderRequest} from "../types/apitypes"
 import { responseToast } from '../utils/features';
 import { useSelector, useDispatch } from 'react-redux';
 import { cartReducer } from '../redux/reducer/cartReducer';

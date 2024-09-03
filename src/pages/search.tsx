@@ -104,7 +104,7 @@ productLoading? (<Skeleton length={10}/> ):(
   {
     searchedData?.products.map((i)=>(
       <ProductCard
-      key={i.id}
+      key={i._id}
   productId={i._id}
   name={i.name}
   price={i.price}

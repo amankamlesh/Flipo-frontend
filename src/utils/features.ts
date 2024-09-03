@@ -1,6 +1,8 @@
 import { MessageResponse } from '../types/apitypes';
 import { FetchBaseQueryError } from '@reduxjs/toolkit/query/react';
 import {SerializedError} from '@reduxjs/toolkit'
+import { NavigateFunction } from "react-router-dom";
+
 import toast from 'react-hot-toast';
 type ResType={
     data:MessageResponse
