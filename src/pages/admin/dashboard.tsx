@@ -6,7 +6,7 @@ import {useStatsQuery} from "../../redux/api/dashboardAPI";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import { BarChart, DoughnutChart } from "../../components/admin/Charts";
 import Table from "../../components/admin/DashboardTable";
-import data from "../../assets/data.json"
+// import data from "../../assets/data.json"
 import { useSelector } from 'react-redux';
 import { RootState } from '../../redux/store';
 

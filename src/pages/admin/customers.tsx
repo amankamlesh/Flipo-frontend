@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { useAllUsersQuery ,useDeleteUserMutation} from "../../redux/api/userApi";
 import toast from 'react-hot-toast';
 import TableHOC from "../../components/admin/TableHOC";
-import { UserReducerInitialState } from '../../types/reducer-type';
+// import { UserReducerInitialState } from '../../types/reducer-type';
 import { CustomError } from '../../types/apitypes';
 import { Skeleton } from '../../components/loader';
 import { responseToast } from "../../utils/features";
@@ -66,7 +66,7 @@ const Customers = () => {
 
   const deleteHandler=async(userId:string)=>{
     if (!user || !user._id) {
-      responseToast(null, "User is not authenticated", "");
+      responseToast( "User is not authenticated", "");
       return;
   }
     const res=await deleteUser({userId,adminUserId:user?._id!});
@@ -83,7 +83,7 @@ const Customers = () => {
 
   useEffect(() => {
     if(data) 
-      setRows( data.users.map((i)=>({
+      setRows( data.user.map((i)=>({
        avatar:<img 
        style={{
         borderRadius:"50%",
