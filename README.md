@@ -1,7 +1,7 @@
 //FOR CHECKING OUT MY WEBSITE
-(https://flipo-git-master-amans-projects-23864133.vercel.app?_vercel_share=iGNsXtXoAbtgxfteXav8gbrPe746t7Xq)
+-[flipo-ecom](https://flipo-git-master-amans-projects-23864133.vercel.app?_vercel_share=iGNsXtXoAbtgxfteXav8gbrPe746t7Xq)
 //IF NOT WORKING THEN CHECK
--(https://flipo-4p66pgl13-amans-projects-23864133.vercel.app/)
+-[flipo-ecom-2](https://flipo-4p66pgl13-amans-projects-23864133.vercel.app/)
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
