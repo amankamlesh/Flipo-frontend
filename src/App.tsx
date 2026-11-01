@@ -49,13 +49,17 @@ const App = () => {
     (state:RootState)=>state.userReducer)
   const dispatch=useDispatch();
  useEffect(() => {
-  
-  onAuthStateChanged(auth, async (user) => {
+  const unsub = onAuthStateChanged(auth, async (user) => {
     if (user) {
-      const data = await getUser(user.uid);
-      dispatch(userExist(data.user));
+      try {
+        const data = await getUser(user.uid);
+        dispatch(userExist(data.user));
+      } catch {
+        dispatch(userNotExist());
+      }
     } else dispatch(userNotExist());
   });
+  return () => unsub();
 }, []);
 
 
