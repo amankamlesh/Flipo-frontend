@@ -1,7 +1,6 @@
 import { FaTrash } from "react-icons/fa";
 import { Link, useParams, useNavigate, Navigate } from 'react-router-dom';
 import AdminSidebar from "../../../components/admin/AdminSidebar";
-import { server } from "../../../redux/store";
 import { OrderItem, Order } from '../../../types/types';
 import { UserReducerInitialState } from '../../../types/reducer-type';
 import { useSelector } from 'react-redux';
@@ -88,7 +87,7 @@ const TransactionManagement = () => {
                 <ProductCard
                   key={i._id}
                   name={i.name}
-                  photo={`${server}/${i.photo}`}
+                  photo={i.photo}
                   productId={i.productId}
                   _id={i._id}
                   quantity={i.quantity}
